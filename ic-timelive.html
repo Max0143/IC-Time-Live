@@ -1,24 +1,19 @@
-
 <html>
+
 <head>
-<title>IC-Time Live</title>
-<link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Video</title>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/afterglow/latest/afterglow.min.js"></script>
 </head>
+
 <body>
-
-<video id="icc" class="video-js vjs-default-skin vjs-fill vjs-big-play-centered" autoplay controls>
-<source type="application/x-mpegURL" src="https://ekb-1-ec.facecast.io/hls_re/a9548679ba6e8be2c523.m3u8">
-</video>
-
-
-<script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
-<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
-<script>
-
-var player = videojs('icc');
-player.play();
-
-</script>
+  <video id='video01' class='afterglow' poster='https://afterglowplayer.com/sandbox/video/Snapshots/afterglow_local.jpg' title='Video 01' width='160' height='90' data-autoresize='fit'>
+                <source src="https://ekb-1-ec.facecast.io/hls_re/a9548679ba6e8be2c523.m3u8" type="video/mp4" data-quality="hd"/>
+                <source src="http://91.194.79.46:8081/stream1/channel1/playlist.m3u8" type="video/mp4" />
+                <source src="https://afterglowplayer.com/sandbox/video/WEBM/afterglow_local_hd.webm" type="video/webm" data-quality="hd"/> 
+                <source src="http://91.194.79.46:8081/stream1/channel1/playlist.m3u8" type="video/webm" />
+            </video>
 </body>
+
 </html>
